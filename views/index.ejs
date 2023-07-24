@@ -5,26 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Utama</title>
     <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://www.dafontfree.net/embed/bW9kZXJuLW5vLTIwLXJlZ3VsYXImZGF0YS8xMy9tLzY1MTAyL01PRDIwLlRURg" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>  
-    <div class="container mx-auto">
-        <nav class="flex items-center justify-between py-5">
-            <a href="/" class="font-bold">NGITENG</a>
-            <div class="nav-menu space-x-4">
-                <a href="" class="">Product</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
-                <a href="">Profile</a>
+    <nav class="desktop:container px-[30px] py-4 flex items-center justify-between">
+        <a href="/" class="font-bold font-modern text-[28px]">NGITENG</a>
+        <div class="nav-menu space-x-4 font-jakartaSans text-primary text-[16px]">
+            <a href="">Belajar</a>
+            <a href="">Tentang Kami</a>
+            <a href="">Pusat Bantuan</a>
+        </div>
+        <div class="auth-menu space-x-12">
+            <a href="" class="font-jakartaSans text-primary text-[16px]">Masuk</a>
+            <a href="" class="py-2 px-6 bg-secondary rounded-[10px] text-white font-jakartaSans text-[16px]">Daftar</a>
+        </div>
+    </nav>
+    <main class="mt-28 desktop:container">
+        <!-- hero section -->
+        <section class="flex items-center justify-between">
+            <div class="flex-1 px-[30px]">
+                <h1 class="font-poppins text-primary text-6xl">Kuasai Keuangan Pribadi Anda dan Raih Kebebasan Finansial</h1>
+                <p class="font-inter my-11 text-xl text-gray-700">Mengelola keuangan dengan bijak dan efektif adalah langkah pertama menuju kebebasan finansial. Di sini, kami hadir untuk membantu Anda menguasai seni pengelolaan keuangan pribadi dan menggapai tujuan finansial Anda.
+                </p>
+                <a href="" class="bg-secondary rounded-[10px] inline-block text-white font-jakartaSans py-3 px-6">Mulai Catat Keuangan</a>
             </div>
-            <div class="auth-menu">
-                <a href="" class="py-2 px-5 border rounded mx-2">Login</a>
-                <a href="" class="py-2 px-5 bg-yellow-600 rounded text-white">Register</a>
+            <div class="flex-1">
+                <img src="/assets/img_hero.png">
             </div>
-        </nav>
-        <div class="mx-auto w-96 h-80 bg-gradient-to-br backdrop-blur-lg from-blue-500 to-green-500 rounded-lg mt-10 shadow-xl"></div>
+        </section>
+        <!-- IMon section -->
+        <section class="mt-32">
+            <div class="title text-center">
+                <h1 class="text-primary text-5xl font-poppins">IMon Untuk Masa Depan Anda</h1>
+                <span class="block w-44 h-2 bg-secondary rounded mx-auto mt-5"></span>
+            </div>
+            <div class="flex justify-center p-[30px] space-x-4 mt-10">
+                <div class="flex-1 text-center flex items-center flex-col">
+                    <img src="/assets/icon1.png" alt="fitur1">
+                    <h2 class="my-14 font-poppins text-3xl">Mudah Digunakan</h2>
+                    <p class="font-jakartaSans text-[16px] text-gray-700">Desain website kami intuitif, navigasi yang mudah dipahami memastikan pengunjung merasa nyaman dan mudah menemukan informasi yang mereka butuhkan.</p>
+                </div>
+                <div class="flex-1 text-center flex items-center flex-col">
+                    <img src="/assets/icon2.png" alt="fitur1">
+                    <h2 class="my-14 font-poppins text-3xl">Fitur Yang Lengkap</h2>
+                    <p class="font-jakartaSans text-[16px] text-gray-700">IMon mencakup pengelolaan anggaran, investasi, pengelolaan utang, hingga perencanaan pensiun.</p>
+                </div>
+                <div class="flex-1 text-center flex items-center flex-col">
+                    <img src="/assets/icon3.png" alt="fitur1">
+                    <h2 class="my-14 font-poppins text-3xl">Pembaruan Teratur</h2>
+                    <p class="font-jakartaSans text-[16px] text-gray-700">Memperbarui konten kami untuk perkembangan terbaru dalam pengelolaan keuangan.</p>
+                </div>
+            </div>
+        </section>
 
-        <button class="bg-sky-400 mx-auto block rounded-full py-1 px-4 mt-40 text-white hover:bg-sky-700 hover:shadow-slate-900 hover:shadow-md active:bg-sky-700 focus:ring-red-900 focus:ring-2 focus:outline-none">submit</button>
-    </div>
-
+        <!-- Financial section -->
+        <section class="mt-32">
+            <div class="title text-center">
+                <h1 class="text-primary text-5xl font-poppins">Kebebasan Finansial Untuk Anda</h1>
+                <span class="block w-44 h-2 bg-secondary rounded mx-auto mt-5"></span>
+            </div>
+            <div class="flex justify-center p-[30px] space-x-4 mt-10">
+                <div class="flex-1 text-center flex items-center flex-col">
+                    <img src="/assets/icon1.png" alt="fitur1">
+                    <h2 class="my-14 font-poppins text-3xl">Mudah Digunakan</h2>
+                    <p class="font-jakartaSans text-[16px] text-gray-700">Desain website kami intuitif, navigasi yang mudah dipahami memastikan pengunjung merasa nyaman dan mudah menemukan informasi yang mereka butuhkan.</p>
+                </div>
+                <div class="flex-1 text-center flex items-center flex-col">
+                    <img src="/assets/icon2.png" alt="fitur1">
+                    <h2 class="my-14 font-poppins text-3xl">Fitur Yang Lengkap</h2>
+                    <p class="font-jakartaSans text-[16px] text-gray-700">IMon mencakup pengelolaan anggaran, investasi, pengelolaan utang, hingga perencanaan pensiun.</p>
+                </div>
+                <div class="flex-1 text-center flex items-center flex-col">
+                    <img src="/assets/icon3.png" alt="fitur1">
+                    <h2 class="my-14 font-poppins text-3xl">Pembaruan Teratur</h2>
+                    <p class="font-jakartaSans text-[16px] text-gray-700">Memperbarui konten kami untuk perkembangan terbaru dalam pengelolaan keuangan.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
