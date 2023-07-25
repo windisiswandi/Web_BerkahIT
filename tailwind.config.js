@@ -6,7 +6,12 @@ module.exports = {
       center: true
     },
     screens: {
-      'desktop': '1440px'
+      'sm':'576px',
+      'md':'768px',
+      'lg':'1024px',
+      'xl':'1280px',
+      'desktop': '1440px',
+      '2xl': '1536px'
     },
     fontFamily: {
       "modern": "modern-no-20-regular",
@@ -18,6 +23,9 @@ module.exports = {
       colors: {
         "primary" : "#025464",
         "secondary": "#E57C23"
+      },
+      flex: {
+        '2': '2 2 0%'
       }
     },
   },
