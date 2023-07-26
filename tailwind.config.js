@@ -26,6 +26,9 @@ module.exports = {
       },
       flex: {
         '2': '2 2 0%'
+      },
+      boxShadow: {
+        'bottom': '-1px 4px 4px 0 rgba(0, 0, 0, 0.1)',
       }
     },
   },
