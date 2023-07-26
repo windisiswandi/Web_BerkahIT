@@ -1,0 +1,35 @@
+<%- include('template/header') %>
+
+<main class="desktop:container flex mt-16 md:mt-28 justify-between">
+    <div class="lg:flex-2 flex-1 px-5 md:px-[30px]">
+        <h1 class="text-primary font-poppins text-3xl lg:text-5xl">Selamat Datang</h1>
+        <p class="font-poppins text-sm lg:text-lg text-[#959191] mt-4">Kami Merindukanmu, silahkan isi data diri anda </p>
+
+        <form action="" class="mt-10 max-w-[600px]">
+            <div class="text-sm lg:text-lg">
+                <label for="email" class="font-poppins">Email</label>
+                <input type="email" name="email" id="email" class="mt-3 w-full p-5 border border-slate-400 rounded-xl focus:outline-none font-poppins" placeholder="Enter your email" required>
+            </div>
+            <div class="mt-5 text-sm lg:text-lg">
+                <label for="pass" class="font-poppins">Kata Sandi</label>
+                <input type="password" name="pass" id="pass" class="mt-3 w-full p-5 border border-slate-400 rounded-xl focus:outline-none font-poppins" placeholder="**********" required>
+            </div>
+            <div class="flex justify-between mt-5 text-sm lg:text-lg">
+                <span>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </span>
+                <a href="" class="text-blue-500">forgot password</a>
+            </div>
+
+            <button type="submit" class="bg-secondary text-white py-4 w-full rounded-lg font-jakartaSans text-lg lg:text-2xl mt-10">Masuk</button>
+            <p class="mt-5 font-poppins text-sm lg:text-[16px] text-[#595959]">Belum punya akun? <a href="/auth/register" class="text-secondary">Daftar</a></p>
+        </form>
+
+    </div>
+    <div class="flex-1 hidden md:block">
+        <img src="/assets/female-hand-holding.png" alt="hand-holding.png" class="md:translate-x-16 lg:translate-x-0">
+    </div>
+</main>
+
+<%- include('template/footer') %>

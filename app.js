@@ -8,7 +8,15 @@ app.use("/assets", express.static("assets"))
 
 app.get("/", (req, res) => {
     // secara default ini akan mencari file di directory views
-    res.render("index")
+    res.render("index", {title: "Financial Record"})
+})
+
+app.get("/auth/login", (req, res) => {
+    res.render("login", {title: "Login Page"})
+})
+
+app.get("/auth/register", (req, res) => {
+    res.render("register", {title: "Register Page"})
 })
 
 // jika user memasukan url yang salah

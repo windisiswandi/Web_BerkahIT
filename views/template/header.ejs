@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link href="https://www.dafontfree.net/embed/bW9kZXJuLW5vLTIwLXJlZ3VsYXImZGF0YS8xMy9tLzY1MTAyL01PRDIwLlRURg" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <div id="nav_sm" class="absolute h-full w-full top-0 left-0 invisible overflow-hidden" style="background-color: rgba(0, 0, 0, 0.5);">
+        <div class="bg-white w-[300px] h-full px-5 py-20 relative -translate-x-[300px] transition-all">
+            <ul class="text-primary text-lg space-y-5">
+                <li class="w-full py-2 border-b-[1px] border-primary"><a href="">Belajar</a></li>
+                <li class="w-full py-2 border-b-[1px] border-primary"><a href="">Tentang Kami</a></li>
+                <li class="w-full py-2 border-b-[1px] border-primary"><a href="">Pusat Bantuan</a></li>
+            </ul>
+            <div class="text-center mt-10">
+                <a href="/auth/login" class="font-jakartaSans text-primary w-full inline-block">Masuk</a>
+                <a href="/auth/register" class="py-3 bg-secondary rounded-[10px] text-white font-jakartaSans w-full inline-block mt-5">Daftar</a>
+            </div>
+
+            <i class="fas fa-times text-xl absolute top-7 right-7 text-slate-900" onclick="controlNavSm()"></i>
+        </div>
+    </div>
+    <nav class="shadow-bottom">
+        <div class="desktop:container flex items-center justify-between md:px-[30px] px-5 py-4">
+            <a href="/" class="font-bold font-modern md:text-[28px] text-lg">NGITENG</a>
+            <div class="hidden sm:block sm:space-x-2 md:space-x-4 font-jakartaSans text-primary sm:text-[12px] md:text-[16px]">
+                <a href="">Belajar</a>
+                <a href="">Tentang Kami</a>
+                <a href="">Pusat Bantuan</a>
+            </div>
+            <div class="hidden sm:block sm:space-x-2 md:space-x-12 sm:text-[12px] md:text-[16px]">
+                <a href="/auth/login" class="font-jakartaSans text-primary">Masuk</a>
+                <a href="/auth/register" class="py-1 px-4 md:py-2 md:px-6 bg-secondary rounded-[10px] text-white font-jakartaSans">Daftar</a>
+            </div>
+            <span onclick="controlNavSm()" class="sm:hidden"><i class="fas fa-bars cursor-pointer text-xl"></i></span>
+        </div>
+    </nav>
