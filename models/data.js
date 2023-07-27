@@ -2,10 +2,15 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.MONGO_URI)
-mongoose.connection.once('open', () => {
-    console.log("Database terkoneksi")
-})
+const connectDB = async () => {
+    try {
+      const conn = await mongoose.connect(process.env.MONGO_URI);
+      console.log(`Database terkoneksi`);
+    } catch (error) {
+      console.log(error);
+      process.exit(1);
+    }
+}
 
 
 const usersSchema = new mongoose.Schema({
@@ -49,7 +54,7 @@ const findBy = async ({email, password=null}, callback) => {
     }
 }
 
-module.exports = {userCrud: {tambahUser, findBy}}
+module.exports = {userCrud: {tambahUser, findBy}, connectDB}
 
 
 

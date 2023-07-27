@@ -2,6 +2,7 @@ require("dotenv").config()
 const express = require("express")
 const app = express()
 const routes = require('./routes')
+const {connectDB} = require('./models/data')
 
 const PORT = process.env.PORT || 3000
  
@@ -24,6 +25,8 @@ app.use((req, res) => {
     res.send("not fil found")
 })
 
-app.listen(PORT, () => {
-    console.log(`server is running on port ${PORT}`)
+connectDB().then(() => {
+    app.listen(PORT, () => {
+        console.log(`server is running on port ${PORT}`)
+    })
 })
