@@ -7,15 +7,6 @@ mongoose.connection.once('open', () => {
     console.log("Database terkoneksi")
 })
 
-// const connectDB = async () => {
-//     try {
-//     }catch (err) {
-//         console.log(err)
-//         process.exit(1)
-//     }
-// }
-
-// connectDB()
 
 const usersSchema = new mongoose.Schema({
     nama: String,
