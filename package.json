@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
+    "realTimeServer": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"nodemon app.js\" \"npx tailwindcss -i ./assets/tailwind.css -o ./assets/style.css --watch\""
   },
@@ -12,8 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.1"
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
